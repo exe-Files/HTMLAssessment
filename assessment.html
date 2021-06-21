@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML assessment</title>
+
+  </head>
+  <body>
+    <div id= "Text">
+      <h1>Text</h1>
+      <p>
+        <strong>Lorem ipsum dolor</strong> sit amet, <span>consectetur adipisicing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+     <blockquote cite="https://www.lipsum.com/feed/html">
+       <em><strong>Mauris</strong> pharetra massa et augue malesuada, id egestas lectus auctor. Praesent nec pretium nulla, eu viverra ex. Aliquam ut felis turpis. Pellentesque consequat ligula non elit fermentum interdum. Etiam sed facilisis sapien. Nam eget eros ac turpis varius sodales quis in enim. Phasellus gravida vehicula urna, sit amet euismod odio mollis at. Nulla tempor hendrerit gravida. Aliquam id nisl scelerisque, vulputate nunc non, faucibus orci. Donec ultrices mauris quis velit egestas, non tristique tortor rhoncus. Nam volutpat blandit pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed metus vel augue tempus sollicitudin eu eu erat. Nulla ipsum ligula, efficitur ut congue ut, mattis nec lorem. Cras vel tempor ligula, ut eleifend erat.</em>
+     </blockquote>
+     <p>
+       <strong>Vestibulum</strong> maximus massa finibus diam sollicitudin malesuada. Donec a blandit quam, sit amet porta libero. Integer dignissim aliquam nisi, sit amet eleifend velit tempor et. Praesent odio arcu, viverra a ligula vel, egestas fringilla lectus. Vestibulum bibendum varius hendrerit. Donec sagittis, lectus quis ullamcorper blandit, nunc justo molestie quam, vel elementum dolor leo nec nunc. Mauris suscipit, libero sed pharetra sollicitudin, neque nunc bibendum lorem, non bibendum metus enim lacinia lacus. Suspendisse quis nisi turpis. Aenean urna quam, consectetur rhoncus est eu, fringilla viverra orci. Integer ac auctor purus, a placerat nulla.
+     </p>
+
+   <div id= "Table">
+     <h2>Table</h2>
+     <table>
+       <caption>Scores by Quarter</caption>
+       <thead>
+        <tr>
+          <th></th>
+          <th scope="col" colspan="2">First Half</th>
+          <th scope="col" colspan="2">Second Half</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="5"><em>Data is based on Fall Game 2019</em></td>
+        </tr>
+      </tfoot>
+      <tbody>
+         <tr>
+           <th scope="col" > Team Name</th>
+           <th scope="col">Q1</th>
+           <th scope="col">Q2</th>
+           <th scope="col">Q3</th>
+           <th scope="col">Q4</th>
+           <th scope="col">Total</th>
+         </tr>
+         <tr>
+           <td scope="row">Denver</td>
+           <td>3</td>
+           <td>0</td>
+           <td>0</td>
+           <td>11</td>
+           <td>14</td>
+         </tr>
+         <tr>
+           <td scope="row">Chicago</td>
+           <td>0</td>
+           <td>6</td>
+           <td>7</td>
+           <td>3</td>
+           <td>16</td>
+         </tr>
+      </tbody>
+
+     </table>
+
+     <!--
+     Create a section header with the title of "LIST". Create a list that organizes the teams by team name, position, and player. Use the default bullets that are provided with an HTML list item.
+     -->
+
+  <div id= "List">
+    <h2>List</h2>
+      <ul>
+        <li>
+          <img width="75" src="https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg" alt="Denver Broncos Logo"><br>
+          <a href="https://www.denverbroncos.com/">Denver Broncos</a></li>
+          <ul>
+            <li>Coach: Vic Fangio</li>
+            <li>QB</li>
+            <ol>
+              <li>Joe Flacco</li>
+            </ol>
+            <li>Reciever</li>
+              <ol>
+                <li>Emmanuel Sanders</li>
+                <li>Shrek</li>
+              </ol>
+          </ul>
+        <li>
+          <img width="75" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg"><br>
+          <a href="https://www.chicagobears.com/">Chicago Bears</a></li>
+          <ul>
+            <li>Coach: Matt Nagy</li>
+            <li>QB</li>
+              <ol>
+                <li>Mitch Trubisky</li>
+              </ol>
+            <li>Reciever</li>
+              <ol>
+                <li>Allen Robinson</li>
+                <li>Adam Shaheen</li>
+              </ol>
+          </ul>
+      </ul>
+ </div>
+
+
+  <div>
+    <h2>Form</h2>
+    <form action="collectData.html" method="POST">
+        <section class="Username">
+          <h3>User Submission</h3>
+          <label for="first-name">First Name:</label>
+          <input id="first-name" type="text" value="John" name="first-name"/>
+          <label for="last-name">Last Name:</label>
+          <input id="last-name" type="text" value="Smith" name="last-name"/> <br>
+        </section>
+        <br>
+        <section class="favorite"
+          <label for="favorite">Favorite Sport:</label>
+          <select class="favorite" name="favorite">
+            <option value="soccer">Soccer</option>
+            <option value="football">American Football</option>
+            <option value="tennis">Tennis</option>
+            <option value="basketball">Basketball</option>
+            <option value="baseball">Baseball</option>
+            <option value="Hockey">Hockey</option>
+          </select>
+        </section>
+        <br>
+        <section class="participation"
+          <p>I have:
+            <input id="attended" type="checkbox" name="participation" value="attended">
+            <label for="attended">Attended</label>
+            <input id="played" type="checkbox" name="participation" value="played">
+            <label for="played">Played</label>
+            <input id="coached" type="checkbox" name="participation" value="coached">
+            <label for="coached">Coached</label>
+            <input id="betOn" type="checkbox" name="participation" value="betOn">
+            <label for="betOn">Bet on</label>
+            <br>this sport
+          </p>
+        </section>
+        <section class="preference"
+        <label for="preference">For this sport I prefer:</label>
+          <input name="preference" id="amateur" type="radio">
+          <label for="amateur">Amateur</label>
+          <input name="preference" id="college" type="radio">
+          <label for="college">College</label>
+          <input name="preference" id="professional" type="radio">
+          <label for="professional">Professional</label>
+          <br>
+        </section>
+        <section>
+          <br>
+          <input type="submit" value="Submit Form">
+        </section>
+    </form>
+
+  </div>
+
+  </body>
+</html>
